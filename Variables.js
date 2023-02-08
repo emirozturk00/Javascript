@@ -63,3 +63,41 @@ if(true){
 }
  console.log("Global scopeta ki deger: "+okulNumarasi);
 
+// Const 
+// Block scope da tanımlı, değeri sonradan değiştirilemez değişkenleri deklare etmek için kullanılan keyword'dür.
+// Const ile tanımlanan objelerin özellikleri (properties) değiştirilebilir fakat objenin kendisi değiştirilemez. Diziler içinde aynısı geçerlidir. Dizi değerleri değiştirilebilir fakat dizinin kendisi değiştirilemez.
+// const kullanici = {
+//   isim: "Ahmet",
+//  }
+//  kullanici.isim = "Dila";
+//  console.log(kullanici.isim);
+ 
+//  const dizi = [1,2,3];
+//  dizi = [1,2,3,4];
+
+// Hoisting 
+// JavaScript’te tanımlanan değişkenler yorumlanırken tanımladığınız değişkenler fonksiyon veya ifadenin yukarısına alınarak yorumlanır. Buna hoisting (yukarı alma) denir. Yukarıya alınan değişkenler var ile deklare edildiyse atandıkları değer yerine undefined değerini alır. let veya const ile deklare edildi ise ReferanceError hatası verir. let ve const ile deklare edilen değişkenler bloğun başlangıcından itibaren tanımının yapıldığı yere kadar kadar geçici (temporal dead zone) bölgededir.
+//1- Console ekraninda ne yazar inceleyelim. 
+var myvar;
+console.log(myvar); 
+myvar = 'local value';
+
+// yukarıda ki örneği adım adım açıklarsak
+// var myvar = undefinded;
+// console.log(myvar); 
+// myvar = 'local value';
+// şeklinde olduğu icin console ekranında undefined değerini görürüz.
+
+// 2- Console ekranında ne yazar inceleyelim.
+sayi1 = 100;
+console.log(sayi1+" ve "+sayi2);;
+var sayi2 = 200;
+var sayi1;
+
+// Adım adım gidelim
+// var sayi 2 = undefined
+// var sayi 1 = undefined
+// sayi 1 = 100;
+// console.log(sayi1+ " ve "+sayi2)
+// sayi 2= 200;
+// sonuç olarak console ekranında henüz sayi 2 değerine değer atanmadığı için "100 ve undefined" değerini görürüz.
