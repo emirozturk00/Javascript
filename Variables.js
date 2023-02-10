@@ -101,3 +101,15 @@ var sayi1;
 // console.log(sayi1+ " ve "+sayi2)
 // sayi 2= 200;
 // sonuç olarak console ekranında henüz sayi 2 değerine değer atanmadığı için "100 ve undefined" değerini görürüz.
+
+// Number veri türü tanımlama
+ let price = 100
+ let tax = 0.18
+ let priceTax = price * tax
+ let total = price + priceTax
+ console.log(
+ "Fiyat:", price, 
+ "KDV Oran:", tax, 
+ "KDV Tutari:", priceTax
+ "Fiyat: ", total
+ )
