@@ -152,3 +152,26 @@ console.log( "Aşağı yuvarlama", Math.floor(1.7) )
 console.log( "Yukarı yuvarlama", Math.ceil(1.2) )
 // Yakına yuvarlama => Math.round
 console.log( "Yakına yuvarlama", Math.round(1.5)) //1.4 ve aşağısı aşağı 1.5 ve yukarı yukarı yuvarlar
+
+// Boolean Veri Türü
+
+// 0 ve 1'i anlamak
+let isActive = false // 0
+isActive = true // 1
+console.log(isActive)
+
+let userName;
+let isUserName = Boolean(userName)
+console.log(isUserName)
+
+// Eğer Boolean'ın içinde bir bilgi varsa true olarak görürüz.
+
+// 0, -0, null, false, NaN, undefined, ("") İçinde değer barındırmayan tüm ifadeler false'tur.
+const c1 = Boolean(undefined);
+const c2 = Boolean(null);
+const c3 = Boolean("");
+const c4 = Boolean(false);
+const c5 = Boolean(NaN);
+const c6 = Boolean(0);
+const c7 = Boolean(-0);
+
