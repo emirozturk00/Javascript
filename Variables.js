@@ -110,6 +110,45 @@ var sayi1;
  console.log(
  "Fiyat:", price, 
  "KDV Oran:", tax, 
- "KDV Tutari:", priceTax
- "Fiyat: ", total
+ "KDV Tutari:", priceTax,
+ "Fiyat:", total,
  )
+
+let stringNumber = "11"
+console.log(stringNumber)
+let newNumber = Number(stringNumber)
+console.log(newNumber)
+console.log( "Number Constractor içine bilgi gönderildi:", Number(111))
+
+//  Arttırma ve azaltma işlemi
+let counter = 320
+counter = counter + 1 //uzun yöntem
+counter += 1;
+counter ++;
+console.log(counter)
+
+counter --;
+console.log(counter)
+
+counter *= 10;
+console.log(counter)
+
+counter /= 2;
+console.log(counter)
+
+// İşlem önceliği
+console.log( (2 + 3) * 10)
+
+// mod(kalan) alma %
+console.log( 4 % 3) // mod alma bölümden kalan sayıyı gösterir
+
+// Üs alma
+console.log( 2 * 2 * 2 *2) // Normal çarpma
+console.log( 2 ** 4) // Üs alma
+
+// Aşağı yuvarlama => Math.floor
+console.log( "Aşağı yuvarlama", Math.floor(1.7) )
+// Yukarı yuvarlama => Math.ceil
+console.log( "Yukarı yuvarlama", Math.ceil(1.2) )
+// Yakına yuvarlama => Math.round
+console.log( "Yakına yuvarlama", Math.round(1.5)) //1.4 ve aşağısı aşağı 1.5 ve yukarı yukarı yuvarlar
